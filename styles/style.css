@@ -276,4 +276,65 @@ main{
 
 
 /* ____________________________________4TH PART_______________________________________ */
+/* my current target style--------------- */
+.current-target{
+    max-width:1140px ;
+    height:463px ;
+    margin-top: 149px;
+    margin-bottom: 111px;
+    /* border: 2px solid blue; */
+}
+.skills-card{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+}
+.skills-card .card-1{
+    width:364px ;
+    height:300px ;
+    padding: 40px;
+    border-radius: 16px;
+    background: rgba(255, 76, 30, 0.05);
+}
+.skills-card .card-2{
+    width:364px ;
+    height:300px ;
+    padding:40px;
+    border-radius:16px ;
+    background: rgba(0, 76, 232, 0.05);
+}
+.skills-card .card-3{
+    width:364px ;
+    height:300px ;
+    padding:40px ; 
+    border-radius: 16px;
+    background: rgba(255, 223, 0, 0.05);
+}
+.skills-card .card-name{
+    margin-top:24px ;
+    margin-bottom: 8px;
+}
+.skills-card .card-description{
+    margin-bottom: 24px;
+}
+/* ----------------------Responsive current target------------------------------ */
+/* For small device */
+@media screen and (max-width:576px) {
+    .skills-card{
+        flex-direction: column;
+    }
+}
+/* For Medium device */
+@media screen and (min-width:576px) and (max-width:992px){
+    
+}
 
+/* _______________________________________5TH PART____________________________________ */
+/* next target style---------------- */
+.next-target{
+    max-width:1140px ;
+    height: 871px;
+    margin-bottom: 41px;
+    border: 2px solid blue;
+}
