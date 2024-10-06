@@ -377,11 +377,15 @@ main{
 /* -----------------------------Responsive next target----------------------- */
 /*For small device */
 @media screen and (max-width:576px) {
+    .next-target{
+        margin-bottom: 400px;
+    }
     .skills-item .item-1, .item-2, .item-3{
         border: none;
         flex-direction: column;
         padding: 0%;
         margin-left: 7px;
+        width: 100%;
     }
     .skills-item .item-1{
         gap: 0%;
@@ -403,4 +407,105 @@ main{
 
 
 
-/* _____________________________________6TH PART____________________________________ */
+/* _______________________________________6TH PART____________________________________ */
+/* I need support style----------------------- */
+.I-need-support{
+    height:314px ;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url(../assets/handshake.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 64px 48px 64px 48px;
+}
+.support-container{
+    width:1044px;
+    height:186px ;
+    /* border: 2px solid yellowgreen; */
+}
+.support-container .text-item{
+    text-align: center;  
+}
+.support-container .submit-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.support-container .text-item h1{ 
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.support-container .text-item p{
+    color: rgb(255, 255, 255);
+    opacity:0.7 ;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.support-container .submit-item .text-field{ 
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255);
+    height: 25px;
+    width: 550px;
+    padding: 19px 20px 19px 20px;
+}
+.support-container .submit-item .text-field::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    color:rgb(13, 19, 33, 0.4) ;
+    opacity: 0.7;
+}
+.support-container .submit-item .submit-button{ 
+    color: rgb(13, 19, 33);
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 40px;
+    width: 120px;
+    padding: 5px 10px 5px 10px;
+}
+/* ------------------------Responsive support----------------------------- */
+/* For small device */
+@media screen and (max-width:576px) {
+    .I-need-support {
+        padding: 30px 25px 30px 25px;
+    }
+    .support-container .submit-item {
+        flex-wrap: wrap;
+    }
+    .support-container .text-item h1 {
+        margin-bottom: 0px;
+    }
+    .support-container .text-item p {
+        margin-bottom: 0px;
+    }
+    .support-container .submit-item .text-field{
+        width: 100%;
+    }
+    .support-container .submit-item{
+        gap: 5px;
+    } 
+}
+/* For medium device */
+@media screen and (min-width:576px) and (max-width:992px) {
+    
+}
+
+/*  */
+
+
